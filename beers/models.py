@@ -6,6 +6,7 @@ class Beer(models.Model):
     brand = models.CharField(max_length=100, default='')
     beer_type = models.CharField(max_length=100, default='')
     ml = models.IntegerField(default=330)
+    owner = models.ForeignKey('auth.User', related_name="beers")
  
     class Meta:
         ordering = ('created',)
