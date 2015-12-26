@@ -58,3 +58,6 @@ target/
 
 # Django SQL
 *.sqlite3
+
+# Django migrations
+migrations/
